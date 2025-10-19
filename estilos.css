@@ -1,0 +1,149 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #111;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5em;
+  letter-spacing: 2px;
+}
+
+/* Navegação */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #222;
+  padding: 10px 0;
+  margin-top: 10px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00ff99;
+}
+
+/* Conteúdo principal */
+main {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Seção de boas-vindas */
+main section:first-of-type {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+main section:first-of-type h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+main section:first-of-type p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+main section:first-of-type img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Seção de lançamentos */
+main section:nth-of-type(2) {
+  padding: 20px 0;
+}
+
+main section:nth-of-type(2) h3 {
+  font-size: 1.8em;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #111;
+}
+
+/* Grade de produtos */
+main section:nth-of-type(2) ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+}
+
+main section:nth-of-type(2) li {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 250px;
+  text-align: center;
+  transition: box-shadow 0.3s;
+}
+
+main section:nth-of-type(2) li:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+main section:nth-of-type(2) img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+main section:nth-of-type(2) h4 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+/* Rodapé */
+footer {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  main section:nth-of-type(2) ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
